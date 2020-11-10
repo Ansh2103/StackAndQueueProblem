@@ -27,7 +27,6 @@
             }
         }
 
-
         public void printNodes() {
             StringBuffer myNodes = new StringBuffer();
             if(isEmpty()) {
@@ -43,6 +42,16 @@
             }
             myNodes.append(tempNode.getValue());
             System.out.println(myNodes);
+        }
+        public Node<T> pop() {
+            Node<T> tempNode = this.head;
+            if(head.equals(tail)) {
+                this.tail = null;
+                this.head = null;
+                return tempNode;
+            }
+            this.head = head.getNext();
+            return tempNode;
         }
 
     }

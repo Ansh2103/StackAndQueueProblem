@@ -12,4 +12,12 @@ public class Stack<T> {
     public void printStack() {
         linkedlist.printNodes();
     }
+
+    public Node<T> peek() {
+        return linkedlist.head;
+    }
+
+    public Node<T> pop() {
+        return linkedlist.pop();
+    }
 }
