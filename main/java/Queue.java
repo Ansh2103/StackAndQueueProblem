@@ -8,6 +8,9 @@ public class Queue<T> {
         public void enQueue(Node<T> value) {
             linkedlist.append(value);
         }
+    public Node<T> deQueue() {
+        return linkedlist.pop();
+    }
 
         public void printStack() {
             linkedlist.printNodes();
